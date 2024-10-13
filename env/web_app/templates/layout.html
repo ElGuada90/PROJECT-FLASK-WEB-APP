@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/site.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="/" class="navbar-brand"><img src="static/images/icon G2.png" class="navbar-logo" alt=""></a>
+        <a href="{{ url_for('index') }}" class="navbar-item">Home</a>
+        <a href="{{ url_for('micanal') }}" class="navbar-item">Mi Canal</a>
+    </div>
+
+    <div class="body-content">
+        {% block content %}
+        {% endblock %}
+        <hr>
+        <footer>
+            <p>Copyright &copy; EG90 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
